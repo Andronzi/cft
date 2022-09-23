@@ -1,0 +1,139 @@
+@media screen and (max-width: 421px) {
+    .table {
+        .table__header {
+            display: none;
+        }
+
+        .table__content {
+            flex-direction: column;
+        }
+
+        .table__cell {
+            width: 70%;
+            margin: 10px auto;
+            min-height: 100px;
+        }
+
+        .table__title_view_phone {
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .table__cell_radius_top_left {
+            border-radius: 0px;
+        }
+    
+        .table__cell_radius_top_right {
+            border-radius: 0px;
+        }
+        
+        .table__cell_radius_bottom_right {
+            border-radius: 0px;
+        }
+    
+        .table__cell_radius_bottom_left {
+            border-radius: 0px;
+        }
+    }
+
+    .search {
+        flex-direction: column;
+
+        .search__input {
+            font-size: 14px;
+        }
+
+        .search__select {
+            margin-top: 10px;
+            width: 70%;
+            font-size: 14px;
+            min-height: 33px;
+        }
+
+        .search__block {
+            width: 70%;
+        }
+
+        .search__button {
+            margin-top: 10px;
+            width: 70%;
+            font-size: 14px;
+            min-height: 33px;
+        }
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 1000px) {
+    .table {
+        .table__cell {
+            padding: 10px 10px;
+        }
+        
+        .table__header {
+            .table__label {
+                font-size: 14px;
+            }
+        }
+
+        .table__content {
+            .table__text {
+                font-size: 10px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 421px) and (max-width: 602px) {
+    .table {
+        .table__cell {
+            padding: 5px 5px;
+        }
+
+        .table__header {
+            .table__label {
+                font-size: 10px;
+            }
+        }
+
+        .table__content {
+            .table__text {
+                font-size: 9px;
+            }
+
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .search {
+        .search__input {
+            font-size: 10px;
+        }
+
+        .search__select {
+            font-size: 10px;
+        }
+
+        .search__button {
+            font-size: 10px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 421px) and (max-width: 1600px) {
+    .table {
+        margin: 20px 20px;
+    }
+
+    .search {
+        margin: 0 20px;
+        margin-top: 20px;
+    }
+}
