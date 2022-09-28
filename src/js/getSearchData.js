@@ -1,18 +1,18 @@
-function getSearchData(contentIndex) {
-  const searchData = [];
-  const contentsList = document.querySelectorAll(".table__content");
+import {
+  targetDataByIndex,
+  targetDataByClassName,
+} from "./helpers/data.helper.js";
 
-  for (let i = 0; i < contentsList.length; ++i) {
-    const content = contentsList[i].children;
+const getColumnInnerContent = (contentIndex) => {
+  const columnList = document.querySelectorAll(".table__content");
+  const columnListChildren = [...columnList].map((value) => value.children);
+  const columnContent = columnListChildren.map((value) =>
+    targetDataByIndex(value, contentIndex).pop()
+  );
 
-    for (let j = 0; j < content.length; ++j) {
-      if (j == contentIndex) {
-        searchData.push(content[j].innerText.trim());
-      }
-    }
-  }
+  return columnContent.map((element) =>
+    targetDataByClassName(element.childNodes, "table__text").pop()
+  );
+};
 
-  return searchData;
-}
-
-export default getSearchData;
+export default getColumnInnerContent;

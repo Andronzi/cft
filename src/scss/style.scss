@@ -71,25 +71,8 @@ p {
             color: #FFFFFF;
         }
 
-        span {
-            position: relative;
-            font-family: 'Orbitron';    
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 18px;
-            color: #fff;
-        }
-
-        span:before {
-            content: attr(data-text);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            color:#8688FF;
-            background: yellow;
-            animation: animate 2s linear paused;
+        .illuminate {
+            color: rgb(231, 94, 94);
         }
 
         @keyframes animate {
