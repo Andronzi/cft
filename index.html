@@ -1,8 +1,47 @@
-@@include('components/head.html')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
 <body>
-    @@include('components/search.html')
+    <div class="search">
+    <div class="search__block">
+        <input class="search__input" type="text" placeholder="Enter the search string">
+        <img class="search__icon" src="img/search.svg">
+    </div>
+    <select name="labels" class="search__select">
+        <option value="Search Algorithms">Search Algorithms</option>
+        <option value="Graph Algorithms">Graph Algorithms</option>
+        <option value="Sort Algorithms">Sort Algorithms</option>
+        <option value="Structures">Structures</option>
+        <option value="Big O notation">Big O notation</option>
+    </select>
+    <button class="search__button">
+        Search
+    </button>
+</div>
     <div class="table">
-        @@include('components/header.html')
+        <div class="table__header">
+    <div class="table__cell table__cell_radius_top_left">
+        <p class="table__label">Search Algorithms</p>
+    </div>
+    <div class="table__cell">
+        <p class="table__label">Graph Algorithms</p>
+    </div>
+    <div class="table__cell">
+        <p class="table__label">Sort Algorithms</p>
+    </div>
+    <div class="table__cell">
+        <p class="table__label">Structures</p>
+    </div>
+    <div class="table__cell table__cell_radius_top_right">
+        <p class="table__label">Big O notation</p>
+    </div>
+</div>
         <div class="table__content">
             <p class="table__label table__title_view_phone">Search Algorithms</p>
             <div class="table__cell">
@@ -161,4 +200,6 @@
             </div>
         </div>
     </div>
-@@include('components/footer.html')
+<script src="js/app.min.js" type="module"></script>
+</body>
+</html>
