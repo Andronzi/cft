@@ -15,17 +15,13 @@
     .search__input {
         box-sizing: border-box;
         width: 100%;
-        background: #1C1C24;
+        background: $black;
         border-radius: 10px;
         height: 33px;
         border: none;
         cursor: pointer;
 
-        font-family: 'Orbitron';
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        color: #FFFFFF;
+        @include setFont('Orbitron', normal, 12px, 15px, 400, $white);
         outline: none;
         padding-left: 35px;
     }
@@ -44,14 +40,10 @@
         flex-basis: 18%;
         height: 33px;
         margin-left: 2%;
-        background: #1C1C24;
+        background: $black;
         border: none;
         border-radius: 10px;
-        font-family: 'Orbitron';
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        color: #FFFFFF;
+        @include setFont('Orbitron', normal, 12px, 15px, 400, $white);
         outline: none;
         cursor: pointer;
     }
@@ -60,15 +52,11 @@
         flex-basis: 18%;
         margin-left: 2%;
         height: 33px;
-        background: #8688FF;
+        background: $light;
         border-radius: 10px;
         cursor: pointer;
         text-align: center;
-        font-family: 'Orbitron';
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 15px;
-        color: #FFFFFF;
+        @include setFont('Orbitron', normal, 12px, 15px, 700, $white);
         border: none;
         padding: 0;
     }

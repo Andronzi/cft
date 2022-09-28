@@ -14,6 +14,19 @@
 
 @import "search";
 
+$black: #1C1C24;
+$white: #FFFFFF;
+$light: #8688FF;
+
+@mixin setFont($fontFamily, $fontStyle, $fontSize, $lineHeight, $fontWeight, $color) {
+    font-family: $fontFamily, sans-serif;
+    font-style: $fontStyle;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    color: $color;
+}
+
 body {
     background-color: #131419;
     margin: 0;
@@ -33,12 +46,7 @@ p {
     }
 
     .table__label {
-        font-family: 'Orbitron';    
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 23px;
-        color: #FFFFFF;
+        @include setFont('Orbitron', normal, 18px, 23px, 700, $white);
         text-align: center;
     }
 
@@ -50,8 +58,8 @@ p {
         }
 
         .table__cell:hover {
-            background-color: #8688FF;
-            color: #fff;
+            background-color: $light;
+            color: $white;
             transition: 0.5s;
         }
     }
@@ -60,17 +68,12 @@ p {
         display: flex;
 
         .table__cell:hover {
-            box-shadow: 0px 0px 6px #8688FF;
+            box-shadow: 0px 0px 6px $light;
             transition: 0.5s;
         }
 
         .table__text {
-            font-family: 'Orbitron';    
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 15px;
-            color: #FFFFFF;
+            @include setFont('Orbitron', normal, 12px, 15px, 400, $white);
         }
 
         .illuminate {
@@ -90,7 +93,7 @@ p {
 
     .table__cell {
         flex-basis: 20%;
-        background: #1C1C24;
+        background: $black;
         min-height: 130px;
         margin-left: 3px;
         margin-top: 3px;
