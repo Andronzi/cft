@@ -19,7 +19,7 @@ export const path = {
     scss: `${src}/scss/style.scss`,
     html: `${src}/*.html`,
     files: `${src}/files/**/*.*`,
-    js: `${src}/js/*.js`,
+    js: `${src}/js/**/*.js`,
   },
   watch: {
     scss: `${src}/scss/**/*.scss`,
