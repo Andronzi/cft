@@ -48,14 +48,16 @@ p {
         .table__cell {
             min-height: 59px;
         }
+
+        .table__cell:hover {
+            background-color: #8688FF;
+            color: #fff;
+            transition: 0.5s;
+        }
     }
 
     .table__content {
         display: flex;
-
-        .table__cell {
-            cursor: pointer;
-        }
 
         .table__cell:hover {
             box-shadow: 0px 0px 6px #8688FF;
