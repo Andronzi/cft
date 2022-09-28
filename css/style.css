@@ -12,90 +12,6 @@
   src: url("../fonts/Orbitron-Bold.ttf") format("truetype");
 }
 
-.search {
-  max-width: 1600px;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 20px;
-  align-items: center;
-}
-
-.search .search__block {
-  display: flex;
-  position: relative;
-  flex-basis: 60%;
-  align-items: center;
-}
-
-.search .search__input {
-  box-sizing: border-box;
-  width: 100%;
-  background: #1C1C24;
-  border-radius: 10px;
-  height: 33px;
-  border: none;
-  cursor: pointer;
-  font-family: "Orbitron";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  outline: none;
-  padding-left: 35px;
-}
-
-.search .search__input::-moz-placeholder {
-  opacity: 0.5;
-}
-
-.search .search__input::placeholder {
-  opacity: 0.5;
-}
-
-.search .search__icon {
-  position: absolute;
-  left: 10px;
-}
-
-.search .search__select {
-  padding-left: 10px;
-  flex-basis: 18%;
-  height: 33px;
-  margin-left: 2%;
-  background: #1C1C24;
-  border: none;
-  border-radius: 10px;
-  font-family: "Orbitron";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  outline: none;
-  cursor: pointer;
-}
-
-.search .search__button {
-  flex-basis: 18%;
-  margin-left: 2%;
-  height: 33px;
-  background: #8688FF;
-  border-radius: 10px;
-  cursor: pointer;
-  text-align: center;
-  font-family: "Orbitron";
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  border: none;
-  padding: 0;
-}
-
-.search .search__button:hover {
-  background-color: #4f51bb;
-  transition: 0.3s;
-}
-
 body {
   background-color: #131419;
   margin: 0;
@@ -116,11 +32,11 @@ p {
 }
 
 .table .table__label {
-  font-family: "Orbitron";
+  font-family: "Orbitron", sans-serif;
   font-style: normal;
-  font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+  font-weight: 700;
   color: #FFFFFF;
   text-align: center;
 }
@@ -133,12 +49,14 @@ p {
   min-height: 59px;
 }
 
-.table .table__content {
-  display: flex;
+.table .table__header .table__cell:hover {
+  background-color: #8688FF;
+  color: #FFFFFF;
+  transition: 0.5s;
 }
 
-.table .table__content .table__cell {
-  cursor: pointer;
+.table .table__content {
+  display: flex;
 }
 
 .table .table__content .table__cell:hover {
@@ -147,11 +65,11 @@ p {
 }
 
 .table .table__content .table__text {
-  font-family: "Orbitron";
+  font-family: "Orbitron", sans-serif;
   font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 15px;
+  font-weight: 400;
   color: #FFFFFF;
 }
 
@@ -209,6 +127,93 @@ p {
 
 .table .table__text_color_green {
   color: #9CE960;
+}
+
+.search {
+  max-width: 1600px;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.search .search__block {
+  display: flex;
+  position: relative;
+  flex-basis: 60%;
+  align-items: center;
+}
+
+.search .search__input {
+  box-sizing: border-box;
+  width: 100%;
+  background: #1C1C24;
+  border-radius: 10px;
+  height: 33px;
+  border: none;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #FFFFFF;
+  outline: none;
+  padding-left: 35px;
+}
+
+.search .search__input::-moz-placeholder {
+  opacity: 0.5;
+}
+
+.search .search__input::placeholder {
+  opacity: 0.5;
+}
+
+.search .search__icon {
+  position: absolute;
+  left: 10px;
+}
+
+.search .search__select {
+  padding-left: 10px;
+  flex-basis: 18%;
+  height: 33px;
+  margin-left: 2%;
+  background: #1C1C24;
+  border: none;
+  border-radius: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+}
+
+.search .search__button {
+  flex-basis: 18%;
+  margin-left: 2%;
+  height: 33px;
+  background: #8688FF;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: none;
+  padding: 0;
+}
+
+.search .search__button:hover {
+  background-color: #4f51bb;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 421px) {
