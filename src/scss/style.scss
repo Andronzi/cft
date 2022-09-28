@@ -12,8 +12,6 @@
     src: url('../fonts/Orbitron-Bold.ttf') format('truetype');
 }
 
-@import "search";
-
 $black: #1C1C24;
 $white: #FFFFFF;
 $light: #8688FF;
@@ -124,4 +122,5 @@ p {
     }
 }
 
+@import "search";
 @import "media";
