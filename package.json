@@ -2,7 +2,7 @@
     "type": "module",
     "dependencies": {
         "browser-sync": "^2.27.9",
-        "dotenv": "^16.0.0",
+        "dotenv": "^16.0.2",
         "fs": "^0.0.1-security",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-clean-css": "^4.3.0",
@@ -19,7 +19,8 @@
         "gulp-webp": "^4.0.1",
         "gulp-webpcss": "^1.1.1",
         "require-dir": "^1.2.0",
-        "sass": "^1.49.9"
+        "sass": "^1.49.9",
+        "webpack-stream": "^7.0.0"
     },
     "devDependencies": {
         "del": "^6.0.0",
